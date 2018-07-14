@@ -1,10 +1,11 @@
 {
   "name": "create-async-flag",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "typings": "index.d.ts",
   "repository": "git@github.com:nickbreaton/create-async-flag.git",
   "author": "nickbreaton <nick@breaton.com>",
+  "description": "Simple promise utility for separate, but dependent control flow.",
   "license": "MIT",
   "scripts": {
     "test": "jest",
