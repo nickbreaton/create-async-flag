@@ -2,6 +2,7 @@
   "name": "create-async-flag",
   "version": "1.0.0",
   "main": "index.js",
+  "typings": "index.d.ts",
   "repository": "git@github.com:nickbreaton/create-async-flag.git",
   "author": "nickbreaton <nick@breaton.com>",
   "license": "MIT",
