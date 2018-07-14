@@ -1,6 +1,6 @@
 # create-async-flag
 
-Simple promise utility for separate, but dependent control flow.
+Simple promise utility for separate, but dependent control flow. [See example here.](https://stackblitz.com/edit/create-async-flag)
 
 ## API
 
@@ -22,7 +22,7 @@ Simple promise utility for separate, but dependent control flow.
 > 
 > async function run() {
 >   // ...
->   await flag.wait(); // execution will hault until flag is set
+>   await flag.wait(); // execution will hault until flag is `set`
 >   // ...
 > }
 > ```
