@@ -1,6 +1,6 @@
 {
   "name": "create-async-flag",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "typings": "index.d.ts",
   "repository": "github:nickbreaton/create-async-flag",
