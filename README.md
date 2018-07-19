@@ -28,7 +28,7 @@ Simple promise utility for separate, but dependent control flow. [See example he
 > ```
 <br>
 
-### `[flag].set()`
+#### `[flag].set()`
 
 > Marks the flag to be immediatly resolved, and to resolve any currently waiting promises.
 > ```js
@@ -44,7 +44,7 @@ Simple promise utility for separate, but dependent control flow. [See example he
 >        // => 'two'
 <br>
 
-### `[flag].unset()`
+#### `[flag].unset()`
 
 > Marks a flag to wait until set is called again.
 > ```js
