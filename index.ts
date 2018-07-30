@@ -1,7 +1,8 @@
 export interface AsyncFlag {
-  set: () => void;
-  unset: () => void;
-  wait: () => Promise<void>;
+  set(): void;
+  unset(): void;
+  wait(): Promise<void>;
+  isSet(): boolean;
 }
 
 function createAsyncFlag() {
@@ -10,18 +11,21 @@ function createAsyncFlag() {
   let resolve: () => void;
 
   const flag: AsyncFlag = {
-    set(): void {
+    set() {
       isSet = true;
       resolve();
     },
-    unset(): void {
+    unset() {
       isSet = false;
       promise = new Promise((_resolve: typeof resolve) => {
         resolve = _resolve;
       });
     },
-    wait(): Promise<void> {
+    wait() {
       return isSet ? Promise.resolve() : promise;
+    },
+    isSet() {
+      return isSet;
     }
   };
 

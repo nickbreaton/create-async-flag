@@ -1,4 +1,4 @@
-import createAsyncFlag, { AsyncFlag } from './';
+import createAsyncFlag, { AsyncFlag } from './index';
 
 let flag: AsyncFlag;
 
@@ -33,4 +33,12 @@ test('unset should create a new promise instance', () => {
   expect(originalPromise).toBe(flag.wait());
   flag.unset();
   expect(originalPromise).not.toBe(flag.wait());
+});
+
+test('isSet should return the current state of the flag', () => {
+  expect(flag.isSet()).toBe(false);
+  flag.set();
+  expect(flag.isSet()).toBe(true);
+  flag.unset();
+  expect(flag.isSet()).toBe(false);
 });
