@@ -63,5 +63,5 @@ Simple promise utility for separate, but dependent control flow. [See example he
 > const flag = createAsyncFlag();
 >
 > flag.isSet(); // => false
-> flag.set()
+> flag.set();
 > flag.isSet(); // => true
